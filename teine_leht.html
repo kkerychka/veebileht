@@ -5,28 +5,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Arvuti Ehitamine</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="image_slider.js"></script>
     </head>
     <body>
         <header>
             <h1>Arvuti Ehitamine</h1>
         </header>
+        <div class="buttons">
+            <a href="pealeht.html">Info</a>
+            <a href="arvutikomponendid.html">Komponendid</a>
+        </div>
         <section id="juhend">
             <h2>Kuidas Ehitada Esimest Arvutit</h2>
-            <article>
-                <h3>Siin on juhend algajatele, kuidas ehitada esimene arvuti. Järgi allpool olevaid samme:</h3>
-                <ol>
-                    <li>Vali sobiv arvutikorpus.</li>
-                    <li>Paigalda emaplaat korpusse.</li>
-                    <li>Lisa protsessor emaplaadile.</li>
-                    <li>Ühenda mälu moodulid emaplaadiga.</li>
-                    <li>Paigalda graafikakaart emaplaadi sobivasse pesasse.</li>
-                    <li>Ühenda HDD/SSD emaplaadiga.</li>
-                    <li>Ühenda toiteplokk emaplaadi ja teiste komponentidega.</li>
-                    <li>Lisa vajalikud jahutusseadmed.</li>
-                    <li>Ühenda arvuti monitori ja muude seadmetega.</li>
-                    <li>Lülita arvuti sisse ja installi operatsioonisüsteem.</li>
-                </ol>
-            </article>
+            <div class="grid-container">
+                <div class="instructions">
+                    <h3>Siin on juhend algajatele, kuidas ehitada esimene arvuti. Järgi allpool olevaid samme:</h3>
+                    <ul>
+                        <li>Vali sobiv arvutikorpus.</li>
+                        <li>Paigalda emaplaat korpusse.</li>
+                        <li>Lisa protsessor emaplaadile.</li>
+                        <li>Paigalda protsessorile jahutusseade.</li>
+                        <li>Ühenda toiteplokk emaplaadi ja teiste komponentidega.</li>
+                        <li>Ühenda Operatiivmälu emaplaadiga.</li>
+                        <li>Paigalda graafikakaart emaplaadi sobivasse pesasse.</li>
+                        <li>Ühenda HDD/SSD emaplaadiga.</li>
+                        <li>Vajadusel paigalda optiline seade (DVD/CD lugeja).</li>
+                        <li>Ühenda ventilaatorid ning teised korpuse pesad emaplaadiga.</li>
+                        <li>Ühenda arvuti monitori ja muude seadmetega.</li>
+                    </ul>
+                </div>
+                <div id="image-slider" class="slider">
+                    <button id="prev-arrow">&lt;</button>
+                    <button id="next-arrow">&gt;</button>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild1.png" alt="Slide 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild2.png" alt="Slide 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild3.png" alt="Slide 3">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild4.png" alt="Slide 4">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild5.png" alt="Slide 5">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild6.png" alt="Slide 6">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild7.png" alt="Slide 7">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild8.png" alt="Slide 8">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild9.png" alt="Slide 9">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild10.png" alt="Slide 10">
+                    </div>
+                    <div class="slide">
+                        <img src="./pildid/pcbuild11.png" alt="Slide 11">
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="komponendid">
             <h2>Vajalikud Komponendid</h2>

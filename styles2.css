@@ -3,11 +3,12 @@ body {
     padding: 0;
     font-family: "Lato", sans-serif;
     font-size: 18px;
+    background-color: lightgrey;
 }
 
 .container {
     display: flex;
-    background-color: #7F7F7F;
+    background-color: lightgrey;
 }
 
 .content {
@@ -59,7 +60,7 @@ header {
     padding: 1rem 0;
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: #007bff;
 }
 
@@ -68,7 +69,7 @@ section {
 }
 
 article {
-    background-color: #fff;
+    background-color: lightgrey;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -105,7 +106,7 @@ li {
 }
 
 .instructions {
-    background-color: #fff;
+    background-color: lightgrey;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -135,4 +136,37 @@ li {
 
 .slider-container {
     position: relative;
+}
+
+#komponendid {
+    text-align: center;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 20px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#scrollToTopBtn {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgb(214, 164, 0);
+    color: black;
 }

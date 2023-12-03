@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Arvuti Ehitamine</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles2.css">
         <script src="image_slider.js"></script>
+        <script defer src="ülesnupp.js"></script>
     </head>
     <body>
         <header>
@@ -15,6 +16,53 @@
             <a href="pealeht.html">Info</a>
             <a href="arvutikomponendid.html">Komponendid</a>
         </div>
+        <section id="komponendid">
+            <h2>Vajalikud Komponendid</h2>
+            <article>
+                <h3>Siin tutvustame mõningaid olulisi arvutikomponente:</h3>
+                <h4>Protsessor (CPU)</h4>
+                <p>Protsessori valimisel tuleb hoolikalt kaaluda mitmeid olulisi tegureid. 
+                    Esiteks, määratle selgelt oma kasutusotstarve, olgu selleks mängimine, multimeedia töötlemine või muud ressursimahukad ülesanded.  
+                    Taktsageduse osas tasub arvestada, et see ei ole alati ainus näitaja, vaid oluline on ka arhitektuur ja tõhusus.
+                    Tähtis on ka protsessori tuumade ja lõimede arv, sest see mõjutab oluliselt protsessori võimekust.</p>
+                <p></p>
+                <p>Samuti on oluline uurida protsessori mälu tuge ja vahemälu suurust, kuna need mõjutavad otseselt jõudlust ja kiirust teatud rakendustes. 
+                    Energiaefektiivsus on tähtis, eriti sülearvutite või energiasäästlike lahenduste puhul sel juhul tasub pöörata tähelepanu protsessori TDP väärtusele.
+                    Valige protsessor, mis pakub parimat hinna-kvaliteedi suhet vastavalt teie eelarvele ja vajadustele.</p>
+
+                <h4>Emaplaat</h4>
+                <p>Emaplaat ühendab kõik arvuti komponendid omavahel. Emaplaadi valimisel tuleb arvestada mitmete teguritega.
+                    Esiteks tuleb kontrollida, kas emaplaadi sokkel ühildub sinu valitud protsessoriga.
+                    Teiseks PCIe pesade arv ja nende kiirus on olulised, eriti kui soovid lisada graafikakaarte, helikaarte või muid laienduskaarte. 
+                    Lisaks pead valima sellise emaplaadi, millel on piisavalt palju operatiivmälu ühenduspesasid ning mis toetab sinu valitud operatiivmälu tüüpi.</p>
+
+                <h4>Operatiivmälu (RAM)</h4>
+                <p>Operatiivmälu valimisel peab esmalt arvestama vajamineva mäluga. RAM-i kiirus on ka oluline, kuna see mõjutab andemete lugemise ja kirjutamise kiirust.
+                    Arvesta ka RAM-i tüübiga, näiteks on DDR4 tänapäeval levinuim standard. Samuti veendu, et valitud RAM on ühilduv emaplaadi ja protsessoriga.</p>
+
+                <h4>Graafikakaart (GPU)</h4>
+                <p>Alustuseks, pead välja selgitama, mille jaoks sul graafikakaarti vaja läheb. 
+                    Kui plaanid mängida mänge või tegeleda keeruka graafikatöötlusega, on graafikakaarti päris kindlasti tarvis.
+                    Kui aga on plaan arvutit kasutada vaid internetis uudiste lugemiseks ning kergemate mängude mängimiseks, siis võib piisata ka integreeritud graafikakaardist protsessoris.</p>
+                <p></p>
+                <p>Graafikakaardi valimisel peab arvestama vajamineva mäluga. Samuti nagu operatiivmälu puhul, on oluline ka mälu tüüp ja selle kiirus.
+                    Ühilduvus emaplaadi ja toiteallikaga on samuti oluline. Kontrolli, et valitud GPU sobiks emaplaadi PCIe pesaga ja et sinu toiteallikas suudaks seda toita.</p>
+
+                <h4>Andmekandjad (HDD/SSD)</h4>
+                <p>Tänapäeval hakkab standardiks muutuma see, et operatsioonisüsteemi hoitakse SSD kettal. 
+                    Üheks põhjuseks on see, et SSD on palju kiirem kui traditsiooniline HDD, aga kallim. Sellepärast on soovitatav need omavahel kombineerida.
+                    Mõttekas on omada ühte SSD ketast operatsioonisüsteemi jaoks ning HDD ketast muude vajalike programmide jaoks.</p>
+
+                <h4>Toiteplokk (PSU)</h4>
+                <p>PSU valimisel on kõige tähtsam, et ta suudaks kõiki teisi komponente elektriga toita. Seega peab vaatama, et PSU oleks piisava võimsusega.
+                    Lisaks on mõistlik uurida PSU energiatõhususe kohta. Paljudel toiteplokkidel on kirjas, kui efektiivsed nad on.</p>
+
+                <h4>Jahutusseadmed</h4>
+                <p>Jahutusseadmete valimisel tuleb esmalt kindlaks teha, mis tüüpi jahutust sa oma ehitusel rakendad. 
+                    Üks võimalus on õhkjahutus, mis kasutab ventilaatoreid ning teine vedelikjahutus, mis kasutavb vedelikku, et suunata soojust komponentidelt.
+                    Samuti peab arvestama jahutusseadmete jõudlusega, et nad ei laseks teistel komponentidel üle kuumeneda.</p>
+            </article>
+        </section>
         <section id="juhend">
             <h2>Kuidas Ehitada Esimest Arvutit</h2>
             <div class="grid-container">
@@ -73,20 +121,8 @@
                 </div>
             </div>
         </section>
-        <section id="komponendid">
-            <h2>Vajalikud Komponendid</h2>
-            <article>
-                <h3>Siin tutvustame mõningaid olulisi arvutikomponente:</h3>
-                <ul>
-                    <li>Protsessor (CPU)</li>
-                    <li>Emaplaat</li>
-                    <li>Operatiivmälu (RAM)</li>
-                    <li>Graafikakaart (GPU)</li>
-                    <li>Andmekandjad (HDD/SSD)</li>
-                    <li>Toiteplokk (PSU)</li>
-                    <li>Jahutusseadmed</li>
-                </ul>
-            </article>
-        </section>
+        <div class="scroll-to-top">
+            <a href="#" id="scrollToTopBtn">ÜLES</a>
+        </div>
     </body>
 </html>

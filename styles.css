@@ -14,21 +14,26 @@ body {
     flex: 1;
     padding: 20px;
     margin-left: 20px;
+    margin-bottom: 0px;
+    position: relative;
 }
 
-h1 {
+.content h1 {
     margin-bottom: 10px;
     font-family: Helvetica, sans-serif;
     font-size: 46px;
 }
 
-.buttons {
-    margin-top: 30px;
+.content .buttons {
+    margin-top: 40px;
+    position: relative;
+    margin-left: 0px;
 }
 
-.buttons a {
+.content .buttons a {
     display: inline-block;
     margin-right: 15px;
+    margin-bottom: 5px;
     padding: 10px 20px;
     background-color: black;
     color: #fff;
@@ -36,8 +41,9 @@ h1 {
     border-radius: 5px;
 }
 
-.buttons a:hover {
-    background-color: blueviolet;
+.content .buttons a:hover {
+    background-color: rgb(214, 164, 0);
+    color: black;
 }
 
 .image-container {
@@ -49,5 +55,107 @@ h1 {
     width: 100%;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
+/* Küsimustiku stiliseerimine */
+
+.quiz-header {
+    position: relative;
+}
+
+.quiz-header h2 {
+    margin-left: 40px;  
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+  .buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+  .slide {
+    display: none;
+  }
+  
+  .active-slide {
+    display: block;
+  }
+  
+  .question {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .answers {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  /* Navigeerimisnupud */
+  #previous, #next, #submit {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #previous, #next {
+    display: none;
+  }
+  
+  #previous:hover, #next:hover, #submit:hover {
+    background-color: rgb(214, 164, 0);
+    color: black;
+  }
+  
+  #results {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Roheline värv õigete vastuste jaoks */
+  .answers.correct {
+    color: lightgreen;
+  }
+  
+  /* Punane valede vastuste puhul */
+  .answers.incorrect {
+    color: red;
+  }
+
+  .answers label.correct {
+    color: lightgreen;
+  }
+  
+  .answers label.incorrect {
+    color: red;
+  }

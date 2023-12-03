@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pealeht</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="quiz.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,14 +13,26 @@
             <h1>KUIDAS EHITADA OMA ARVUTIT</h1>
             <p>Oma arvuti ehitamine võib tunduda hirmuäratav ülesanne, eriti algajatele. Võite muretseda, et see on liiga raske, liiga kallis või liiga pikk, kuid see ei pea olema!</p>
             <p>Selles juhendis selgitame samm-sammult, kuidas arvutit ehitada, alustades arvuti vajaduste mõistmisest, arvuti erinevate osade õppimisest ja esimese arvuti loomise protsessist.</p>
-            <div class="buttons">
-                <a href="esimene_leht.html">Juhend</a>
-                <a href="teine_leht.html">Komponendid</a>
-            </div>
+            <p class="buttons">
+                <a href="teine_leht.html">Juhend</a>
+                <a href="arvutikomponendid.html">Komponendid</a>
+            </p>
         </div>
         <div class="image-container">
-            <img src="pildit/computer.jpg" alt="Pildi kirjeldus">
+            <img src="pildid/computer.jpg" alt="Pildi kirjeldus">
         </div>
+    </div>
+
+    <div class="quiz-header">
+        <h2>Enne materjali lugemist saad kontrollida oma teadmisi:</h2>
+    </div>
+
+    <div id="quiz-container">
+        <div id="quiz-content"></div>
+        <div id="results"></div>
+        <button id="previous" style="display: none;">Eelmine</button>
+        <button id="next">Järgmine</button>
+        <button id="submit" style="display: none;">Esita</button>
     </div>
 </body>
 </html>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pealeht</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="quiz.js"></script>
+    <script defer src="ülesnupp.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,8 +20,39 @@
             </div>
         </div>
         <div class="image-container">
-            <img src="pildit/computer.jpg" alt="Pildi kirjeldus">
+            <img src="pildid/computer.jpg" alt="Pildi kirjeldus">
         </div>
     </div>
+
+    <div class="quiz-header">
+        <h2>Enne materjali lugemist saad kontrollida oma teadmisi:</h2>
+    </div>
+
+    <div id="quiz-container">
+        <div id="quiz-content"></div>
+        <div id="results"></div>
+        <button id="previous" style="display: none;">Eelmine</button>
+        <button id="next">Järgmine</button>
+        <button id="submit" style="display: none;">Esita</button>
+    </div>
+    <div class="content2">
+        <h2>Mida sa ehitada tahad?</h2>
+        <p>Nagu kõige muu ehitamise puhul, on tavaliselt alustamiseks parim mõistmine, mida soovite luua.</p>
+        <p></p>
+        <p>Võite olla paadunud mängur, kes otsib kohandatud mänguarvutit, õpilane, kes teeb uurimistööd ja toimetab, või keegi, kes kasutab oma arvutit igapäevaste ülesannete täitmiseks.</p>
+        <p></p>
+        <p>Kui teate, millist arvutit soovite, saate aru, millist riistvara ja jõudlust vajate - ja väldite selle eest, mida te ei vaja.</p>
+        <p></p>
+        <h2>Mida saate endale lubada?</h2>
+        <p>Arvutiosadele kulutatav rahasumma võib vägagi varieeruda, seega on hea mõte realistlik eelarve enne tähtaega silmas pidada.</p>
+        <p></p>
+        <p>Kui soovite kõigi arvutikomponentide parimat võimalikku jõudlust, maksate rohkem. Kiiremad protsessorid maksavad rohkem kui aeglasemad ning uuema põlvkonna mälu ja suurema mahutavusega salvestusruumid maksavad üldiselt rohkem kui vanemad väiksema mahuga protsessorid.</p>
+        <p></p>
+        <p>Kuna mälu ja salvestusruum võtavad suure osa uue arvuti maksumusest, annab oma arvuti ehitamine teile paindlikkuse, et säästa nende komponentide pealt, kui soovite. Kuigi RAM-i ja SSD kulud kasvavad nende pakutava mahuga, võivad need olla odavamad kui eelinstallitud komponentide ostmine, mis on sageli ebapiisavad ja vajavad kiiret uuendamist.</p>
+    </div>
+    <div class="scroll-to-top">
+        <a href="#" id="scrollToTopBtn">ÜLES</a>
+    </div>
+    
 </body>
 </html>

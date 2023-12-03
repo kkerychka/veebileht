@@ -117,9 +117,9 @@
           b: "RAM-mälu",
           c: "Graafikakaart",
           d: "Emaplaat",
-          e: "Kõik eelnevad"
+          e: "Vineerisaag"
         },
-        correctAnswers: ["a", "b", "c", "d", "e"]
+        correctAnswers: ["a", "b", "c", "d"]
       },
       {
         question: "Mis on protsessor?",

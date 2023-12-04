@@ -1,17 +1,21 @@
+// selle küsimustiku tegemisel võtsin ideed kahest allikast: 
+// 1) https://codingtorque.com/quiz-app-using-javascript/#google_vignette
+// 2) https://www.codewithfaraz.com/content/161/build-a-quiz-application-with-html-css-and-javascript-step-by-step-guide#google_vignette
+// pärast hakkasin tööd koos Chat GPT-ga, andsin talle need koodid ja seletasin, mida soovin endas küsimustikus näha, kuna kuna ma ei tunne JavaScripti üldse
 (function () {
-    // Functions
+    // funktsioonid
     function buildQuiz() {
-      // variable to store the HTML output
+      // muutuja HTML väljundi salvestamiseks
       const output = [];
   
-      // for each question...
+      // iga küsimuse jaoks...
       myQuestions.forEach((currentQuestion, questionNumber) => {
-        // variable to store the list of possible answers
+        // muutuja võimalike vastuste loendi salvestamiseks
         const answers = [];
   
-        // and for each available answer...
+        // ja iga saadaoleva vastuse jaoks...
         for (letter in currentQuestion.answers) {
-          // ...add an HTML checkbox
+          // ...HTMLi märkeruutu lisamine
           answers.push(
             `<label>
                   <input type="checkbox" name="question${questionNumber}" value="${letter}">
@@ -21,7 +25,7 @@
           );
         }
   
-        // add this question and its answers to the output
+        // küsimuse ja selle vastuste lisamine väljundisse
         output.push(
           `<div class="slide">
                 <div class="question"> ${currentQuestion.question} </div>
@@ -30,46 +34,46 @@
         );
       });
   
-      // finally combine our output list into one string of HTML and put it on the page
+      // lõpuks ühendame väljundloend üheks HTML-istringiks ja paneme see lehele
       quizContainer.innerHTML = output.join('');
     }
   
     function showResults() {
-      // gather answer containers from our quiz
+      // kogu vastuse konteinerid küsitluselt
       const answerContainers = quizContainer.querySelectorAll('.answers');
   
-      // keep track of user's answers
+      // kasutaja vastuste jälgimine
       let numCorrect = 0;
   
-      // for each question...
+      // iga küsimuse jaoks...
       myQuestions.forEach((currentQuestion, questionNumber) => {
-        // find selected answers
+        // valitud vastuste leidmine
         const selectedOptions = answerContainers[questionNumber].querySelectorAll('input:checked');
         const userAnswers = Array.from(selectedOptions).map(option => option.value);
   
-        // find correct and incorrect answers
+        // õigete ja valede vastuste leidmine
         const correctAnswers = currentQuestion.correctAnswers;
         const incorrectAnswers = userAnswers.filter(answer => !correctAnswers.includes(answer));
   
-        // color the correct answers green
+        // õigete vastuste värvimine roheliseks
         correctAnswers.forEach(answer => {
           const label = answerContainers[questionNumber].querySelector(`[value="${answer}"]`).parentNode;
           label.classList.add('correct');
         });
   
-        // color the incorrect answers red
+        // valede vastuste värvimine punaseks
         incorrectAnswers.forEach(answer => {
           const label = answerContainers[questionNumber].querySelector(`[value="${answer}"]`).parentNode;
           label.classList.add('incorrect');
         });
   
-        // increment the number of correct answers
+        // õigete vastuste arvu suurendamine
         if (arraysEqual(userAnswers, correctAnswers)) {
           numCorrect++;
         }
       });
   
-      // show number of correct answers out of total
+      // õigete vastuste arv kokku
       resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
     }
   
@@ -105,7 +109,7 @@
       return JSON.stringify(arr1.sort()) === JSON.stringify(arr2.sort());
     }
   
-    // Variables
+    // Muutujad
     const quizContainer = document.getElementById('quiz-content');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
@@ -133,19 +137,19 @@
       }
     ];
   
-    // Kick things off
+    // alustamine
     buildQuiz();
   
-    // Pagination
+    // lehelugemine
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
   
-    // Show the first slide
+    // näitame esimest slaid
     showSlide(currentSlide);
   
-    // Event listeners
+    // sündmuse kuulajad
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);

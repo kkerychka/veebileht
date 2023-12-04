@@ -1,0 +1,180 @@
+body {
+    background-color: white;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.konteiner {
+    display: flex;
+    background-color: #7F7F7F;
+}
+.sisu {
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.sisu h1 {
+    margin-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 46px;
+}
+
+.sisu .nuppud {
+    margin-top: 40px;
+    position: relative;
+    margin-left: 0px;
+}
+
+.sisu .nuppud a {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sisu .nuppud a:hover {
+    background-color: rgb(214, 164, 0);
+    color: black;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Set to repeat(4, 1fr) for four columns */
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+main a {
+    text-align: center;
+}
+
+main figure {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main figcaption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-align: left;
+    margin-left: 30px;
+    font-family: "Lato", sans-serif;
+    font-size: 38px;
+}
+header h2 {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(214, 164, 0);
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: rgb(214, 164, 0);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#scrollToTopBtn {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: black;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: rgb(214, 164, 0);
+    color: black;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}

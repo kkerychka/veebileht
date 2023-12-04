@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tellimuse vormistamine</title>
+    <link rel="stylesheet" href="style3.css">
+    <script defer src="ülesnupp.js"></script>
+</head>
+<body>
+	<div class="konteiner">
+		<div class="sisu">
+			<header>
+    				<h1>Mänguarvutid</h1>
+    				<br />
+			</header>
+        		<div class="buttons">
+            			<a href="pealeht.html">Pealeht</a>
+            			<a href="teine_leht.html">Juhend</a>
+				<a href="arvutikomponendid.html">Arvutikomponendid</a>
+	    			<a href="mänguarvutid.html">Valmis mänguarvutid</a>
+        		</div>
+		</div>
+	</div>
+    		<br />
+    		<br />
+    		<br />
+   		<br />	
+
+    <form action="обработчик.php" method="post">
+        <h2>Tellimuse vormistamine</h2>
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="orderDetails">Tellimuse kirjeldus:</label>
+        <textarea id="orderDetails" name="orderDetails" rows="4" required></textarea>
+
+        <div class="buttons">
+            <button type="submit">Saada</button>
+        </div>
+    </form>
+</body>
+</html>

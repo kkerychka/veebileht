@@ -1,3 +1,6 @@
+// Osa sellest koodist on võetud järgnevalt lehetl: https://www.geeksforgeeks.org/creating-custom-image-slider-javascript/. 
+//Siiski olen ise seda päris palju muutnud vastavalt vajadusele.
+
 // JavaScript for Image Slider
 document.addEventListener('DOMContentLoaded', function () {
     let currentSlide = 0;

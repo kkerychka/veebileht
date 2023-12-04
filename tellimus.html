@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="style3.css">
     <script defer src="ülesnupp.js"></script>
 </head>
-<header>
-    <h1>Mänguarvutid</h1>
-    <br />
-</header>
-        <div class="buttons">
-            <a href="pealeht.html">Pealeht</a>
-            <a href="teine_leht.html">Juhend</a>
-            <a href="arvutikomponendid.html">Arvutikomponendid</a>
-	    <a href="mänguarvutid.html">Valmis mänguarvutid</a>
-        </div>
 <body>
+    <header>
+        <h1>Mänguarvutid</h1>
+        <br />
+    </header>
+
+    <div class="buttons">
+        <a href="pealeht.html">Pealeht</a>
+        <a href="teine_leht.html">Juhend</a>
+        <a href="arvutikomponendid.html">Arvutikomponendid</a>
+        <a href="mänguarvutid.html">Valmis mänguarvutid</a>
+    </div>
 
     <form action="обработчик.php" method="post">
         <h2>Tellimuse vormistamine</h2>
@@ -27,21 +28,15 @@
         <label for="email">E-post:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="phone">Teleon:</label>
+        <label for="phone">Telefon:</label>
         <input type="tel" id="phone" name="phone" required>
 
-        <label for="orderDetails">Tellimuse kirjeluds:</label>
+        <label for="orderDetails">Tellimuse kirjeldus:</label>
         <textarea id="orderDetails" name="orderDetails" rows="4" required></textarea>
 
         <div class="buttons">
-        <button type="submit">Saada</button>
+            <button type="submit">Saada</button>
         </div>
     </form>
-    <script>
-        function submitForm() {
-            window.location.href = 'arvutikomponendid.html';
-        }
-    </script>
-
 </body>
 </html>

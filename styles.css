@@ -5,12 +5,12 @@ body {
     font-size: 18px;
 }
 
-.container {
+.konteiner {
     display: flex;
     background-color: #7F7F7F;
 }
 
-.content {
+.sisu {
     flex: 1;
     padding: 20px;
     margin-left: 20px;
@@ -18,19 +18,19 @@ body {
     position: relative;
 }
 
-.content h1 {
+.sisu h1 {
     margin-bottom: 10px;
     font-family: Helvetica, sans-serif;
     font-size: 46px;
 }
 
-.content .buttons {
+.sisu .nuppud {
     margin-top: 40px;
     position: relative;
     margin-left: 0px;
 }
 
-.content .buttons a {
+.sisu .nuppud a {
     display: inline-block;
     margin-right: 15px;
     margin-bottom: 5px;
@@ -41,17 +41,17 @@ body {
     border-radius: 5px;
 }
 
-.content .buttons a:hover {
+.sisu .nuppud a:hover {
     background-color: rgb(214, 164, 0);
     color: black;
 }
 
-.image-container {
+.pildi-konteiner {
     flex: 1;
     margin-right: 20px;
 }
 
-.image-container img {
+.pildi-konteiner img {
     width: 100%;
     height: auto;
     margin-top: 20px;
@@ -160,7 +160,7 @@ body {
     color: red;
   }
 
-.content2 {
+.sisu2 {
     max-width: 800px;
     position: relative;
     font-family: "Lato", sans-serif;
@@ -172,19 +172,19 @@ body {
     position: relative;
     text-align: justify;
 }
-.content2 h2 {
+.sisu2 h2 {
     margin-bottom: 10px;
     font-family: Helvetica, sans-serif;
     font-size: 34px;
 }
 
-.scroll-to-top {
+.ülesnupp {
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
 
-#scrollToTopBtn {
+#keriülesNupp {
     display: inline-block;
     width: 80px;
     height: 40px;
@@ -199,7 +199,7 @@ body {
     padding: 2px;
 }
 
-#scrollToTopBtn:hover {
+#keriülesNupp:hover {
     background-color: rgb(214, 164, 0);
     color: black;
 }

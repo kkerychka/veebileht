@@ -21,10 +21,12 @@ h1 {
     margin-bottom: 10px;
     font-family: Helvetica, sans-serif;
     font-size: 46px;
+    color: black;
 }
 
 .buttons {
     margin-top: 30px;
+    margin-left: 20px;
 }
 
 .buttons a {

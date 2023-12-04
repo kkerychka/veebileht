@@ -59,11 +59,11 @@ body {
 }
 /* Küsimustiku stiliseerimine */
 
-.quiz-header {
+.küsimustik-pealkiri {
     position: relative;
 }
 
-.quiz-header h2 {
+.küsimustik-pealkiri h2 {
     margin-left: 40px;  
 }
 
@@ -172,6 +172,7 @@ body {
     position: relative;
     text-align: justify;
 }
+
 .sisu2 h2 {
     margin-bottom: 10px;
     font-family: Helvetica, sans-serif;
